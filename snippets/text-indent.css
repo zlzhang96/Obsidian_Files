@@ -1,4 +1,4 @@
-/* 编辑模式 */
+/* -----编辑模式----- */
 /* pre.CodeMirror-line:not(.HyperMD-header){
     text-indent: 2em;
 } */
@@ -6,23 +6,31 @@
   text-indent: 2em;
 }
 
-/* 预览模式 */
+/* -----预览模式----- */
 .markdown-preview-section p {
-  /* each-line is not supported yet */
-  /* text-indent: 2em each-line; */
-  text-indent: 2em 
+    /* each-line is not supported yet */
+    /* text-indent: 2em each-line; */
+    text-indent: 2em 
 }
 
+/* 图表取消缩进 */
 .markdown-preview-section p > span:first-child {
-  display: inline-block;
-  text-indent: -2em;
-  /* transform: translateX(-4em); */
-  /* background-color: pink; */
+    display: inline-block;
+    text-indent: -2em;
+    /* transform: translateX(-4em); */
+    /* background-color: pink; */
 }
 
+/* 引用取消缩进 */
 .markdown-rendered blockquote > :first-child {
   text-indent: 0em;
 }
+
+/* 列表取消缩进 */
+.markdown-rendered ul.has-list-bullet li p:first-of-type {
+  text-indent: 0em;
+}
+
 
 /* 单独的行内代码 */
 /* pre[class*="language-"] {
