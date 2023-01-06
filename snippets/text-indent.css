@@ -1,0 +1,33 @@
+/* 编辑模式 */
+/* pre.CodeMirror-line:not(.HyperMD-header){
+    text-indent: 2em;
+} */
+.markdown-source-view.mod-cm6 {
+  text-indent: 2em;
+}
+
+/* 预览模式 */
+.markdown-preview-section p {
+  /* each-line is not supported yet */
+  /* text-indent: 2em each-line; */
+  text-indent: 2em 
+}
+
+.markdown-preview-section p > span:first-child {
+  display: inline-block;
+  text-indent: -2em;
+  /* transform: translateX(-4em); */
+  /* background-color: pink; */
+}
+
+.markdown-rendered blockquote > :first-child {
+  text-indent: 0em;
+}
+
+/* 单独的行内代码 */
+/* pre[class*="language-"] {
+  text-indent: -15px !important;
+} */
+/* .markdown-preview-section p code{
+    text-indent: -2em;
+} */
